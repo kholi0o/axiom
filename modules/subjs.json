@@ -1,4 +1,4 @@
 [{
-	"command":"cat input | /home/op/go/bin/subjs | tee output",
+	"command":"cat input | /home/op/go/bin/subjs -c 100 | tee -a output",
 	"ext":"txt"
 }]
