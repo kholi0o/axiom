@@ -1,5 +1,5 @@
 [{
-	"command":"/home/op/go/bin/subfinder -silent -d _target_ -all -o _output_/_cleantarget_ --quiet --rm-logs",
+	"command":"/home/op/go/bin/subfinder -silent -d _target_ -all -o _output_/_cleantarget_",
 	"ext":"txt",
 	"threads":"100"
 }]
