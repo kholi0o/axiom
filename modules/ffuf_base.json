@@ -1,5 +1,5 @@
 [{
-	"command":"/home/op/go/bin/ffuf -w _wordlist_ -u _target_/FUZZ -r -mc 200 -D -e conf,config,bak,backup,swp,old,db,sql,asp,aspx,aspx~,asp~,py,py~,rb,rb~,php,php~,bak,bkp,cache,cgi,conf,csv,html,inc,jar,js,json,jsp,jsp~,lock,log,rar,old,sql,sql.gz,sql.zip,sql.tar.gz,sql~,swp,swp~,tar,tar.bz2,tar.gz,txt,wadl,zip,log,xml,js,json -fs 0 -o _output_/_cleantarget_ ",
+	"command":"/home/op/go/bin/ffuf -w _wordlist_ -u _target_/FUZZ -o _output_/_cleantarget_ ",
   "wordlist":"/home/op/lists/seclists/Discovery/Web-Content/big.txt",
 	"ext":"txt",
 	"threads":"100"
