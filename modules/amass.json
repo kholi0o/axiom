@@ -1,4 +1,4 @@
 [{
-	"command":"/usr/bin/amass enum -df input -o output --quiet --rm-logs",
+	"command":"/usr/bin/amass enum -df input -o output",
 	"ext":"txt"
 }]
