@@ -1,0 +1,4 @@
+[{
+	"command":"subjack -w input -t 50 -timeout 15 -ssl -a | tee -a output",
+	"ext":"txt"
+}]
