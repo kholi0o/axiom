@@ -1,0 +1,4 @@
+[{
+	"command":"python3 /home/op/recon/SSTImap/sstimap.py -u input | grep "Scanning url:\|SSTImap identified\|GET parameter:\|Engine:\|Injection:\|Context:\|OS:\|Technique:" | tee -a output",
+	"ext":"txt"
+}]
