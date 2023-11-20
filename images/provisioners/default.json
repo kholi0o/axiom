@@ -309,7 +309,11 @@
 
         "echo 'Installing sqlmap'",
         "git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git /home/op/recon/sqlmap-dev",
-
+        
+        "echo 'Installing sstimap'",
+        "git clone https://github.com/vladko312/SSTImap.git /home/op/recon/", 
+        "cd /home/op/recon/SSTImap; pip3 install -r requirements.txt > /dev/null 2>&1; cd ~",
+        
         "echo 'Installing subjack'",
         "/bin/su -l op -c '/usr/local/go/bin/go install github.com/haccer/subjack@latest'",
 
