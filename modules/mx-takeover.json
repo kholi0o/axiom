@@ -1,0 +1,4 @@
+[{
+	"command":"cat input | mx-takeover -check-whois -mailgun-api 3aab69d3f9550c8d73607b54adcec2d0-c30053db-c68df6d2 -output output",
+	"ext":"txt"
+}]
