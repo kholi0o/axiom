@@ -1,0 +1,4 @@
+[{
+  "command":"dotdotpwn -m http-url -u input -b -k "root:" -r output",
+  "ext":"txt"
+}]
