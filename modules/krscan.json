@@ -1,4 +1,5 @@
 [{
-	"command":"/usr/bin/kr scan input -o text | tee output",
+	"command":"/usr/bin/kr scan input -o text -A=apiroutes-230628 --fail-status-codes 400,401,404,403,501,502,426,411 -q | tee output",
+  "wordlist":"/home/op/lists/seclists/Discovery/Web-Content/api/api-endpoints-res.txt",
 	"ext":"txt"
 }]
