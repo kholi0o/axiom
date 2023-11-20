@@ -1,0 +1,4 @@
+ [{
+	"command":"socialhunter -f input -w 10 | tee -a output;",
+	"ext":"txt"
+}]
