@@ -1,0 +1,4 @@
+[{
+	"command":"xray webscan --url-file input --html-output output",
+	"ext":"html"
+}]
