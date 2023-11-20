@@ -1,0 +1,4 @@
+[{
+	"command":"python3 ~/home/op/recon/jexboss/jexboss.py -mode file-scan -file input -out output",
+	"ext":"log"
+}]
