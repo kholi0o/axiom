@@ -1,0 +1,4 @@
+[{
+	"command":"subzy --targets input --concurrency 50 --hide_fails | grep -v 'Loaded\|HTTPS\|Concurrent\|SSL\|timeout\|Show' | tee -a output",
+	"ext":"txt"
+}]
