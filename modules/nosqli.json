@@ -1,4 +1,4 @@
- [{
+[{
 	"command":"nosqli scan --insecure -t input | tee -a output",
 	"ext":"txt"
 }]
