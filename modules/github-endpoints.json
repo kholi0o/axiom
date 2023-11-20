@@ -1,5 +1,5 @@
 [{
-	"command":"/home/op/go/bin/github-endpoints -d _target_ -t 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 -o _output_/_cleantarget_",
+	"command":"/home/op/go/bin/github-endpoints -d _target_ -t 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 -o _output_/_cleantarget_",
 	"ext":"txt",
 	"threads":"100"
 }]
