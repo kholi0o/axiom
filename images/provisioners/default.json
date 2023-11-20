@@ -95,7 +95,10 @@
         "git clone https://github.com/danielmiessler/SecLists.git /home/op/lists/seclists",
 
         "echo 'Installing Tools'",
-
+        
+        "echo 'Installing Apache Tomcat Scanner'", 
+        "/bin/su -l op -c 'sudo python3 -m pip install apachetomcatscanner'",
+          
         "echo 'Installing anew'",
         "/bin/su -l op -c '/usr/local/go/bin/go install github.com/tomnomnom/anew@latest'",
 
@@ -234,6 +237,10 @@
         "echo 'Installing jaeles'",
         "/bin/su -l op -c 'GO111MODULE=on /usr/local/go/bin/go install github.com/jaeles-project/jaeles@latest'",
 
+        "echo 'Installing jexboss'",
+        "git clone https://github.com/joaomatosf/jexboss.git /home/op/recon/jexboss",
+        "pip install -r /home/op/recon/jexboss/requires.txt", 
+        
         "echo 'Installing katana'",
         "/bin/su -l op -c '/usr/local/go/bin/go install github.com/projectdiscovery/katana/cmd/katana@latest'",
 
@@ -255,6 +262,9 @@
         "echo 'Installing meg'",
         "/bin/su -l op -c '/usr/local/go/bin/go install github.com/tomnomnom/meg@latest'",
 
+        "echo 'Installing mx-takeover'",
+        "/bin/su -l op -c '/usr/local/go/bin/go install github.com/musana/mx-takeover@latest'",
+        
         "echo 'Installing naabu'",
         "/bin/su -l op -c 'GO111MODULE=on /usr/local/go/bin/go install github.com/projectdiscovery/naabu/v2/cmd/naabu@latest'",
 
@@ -265,6 +275,11 @@
         "echo 'Installing nuclei'",
         "/bin/su -l op -c 'GO111MODULE=on /usr/local/go/bin/go install github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest && /home/op/go/bin/nuclei'",
 
+        "echo 'Installing nosqli'",
+        "wget https://github.com/Charlie-belmer/nosqli/releases/download/v0.5.4/nosqli_linux_x64_v0.5.4", 
+        "sudo mv nosqli_linux_x64_v0.5.4 /usr/bin/nosqli", 
+        "sudo chmod +x /usr/bin/nosqli", 
+        
         "echo 'Installing OpenRedireX'",
         "/bin/su -l op -c 'docker image build - < /home/op/lists/axiom-dockerfiles/openredirex/Dockerfile -t axiom/openredirex'",
 
@@ -283,6 +298,9 @@
         "echo 'Installing s3scanner'",
         "/bin/su -l op -c 'pip3 install s3scanner'",
 
+        "echo 'Installing s3enum'",
+        "/bin/su -l op -c '/usr/local/go/bin/go install github.com/koenrh/s3enum@v1'",
+        
         "echo 'Installing scrying'",
         "wget -q -O /tmp/scrying.deb https://github.com/nccgroup/scrying/releases/download/v0.9.0-alpha.2/scrying_0.9.0-alpha.2_amd64.deb && apt install /tmp/scrying.deb -y -qq && apt install xvfb -y -qq",
 
@@ -295,12 +313,18 @@
         "echo 'Installing subjack'",
         "/bin/su -l op -c '/usr/local/go/bin/go install github.com/haccer/subjack@latest'",
 
+        "echo 'Installing subzy'",
+        "/bin/su -l op -c '/usr/local/go/bin/go install github.com/LukaSikic/subzy@latest'",
+        
         "echo 'Installing subfinder'",
         "/bin/su -l op -c 'GO111MODULE=on /usr/local/go/bin/go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest'",
 
         "echo 'Installing subjs'",
-        "/bin/su -l op -c 'GO111MODULE=on /usr/local/go/bin/go install -v github.com/lc/subjs@latest'",
+        "/bin/su -l op -c 'GO111MODULE=on /usr/local/go/bin/go install github.com/lc/subjs@latest'",
 
+        "echo 'Installing socialhunter'",
+        "/bin/su -l op -c '/usr/local/go/bin/go install github.com/utkusen/socialhunter@latest'",
+        
         "echo 'Installing testssl'",
         "git clone --depth 1 https://github.com/drwetter/testssl.sh.git /home/op/recon/testssl.sh",
         
