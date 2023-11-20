@@ -1,0 +1,4 @@
+ [{
+	"command":"apachetomcatscanner -tf input -C -T 100 | tee -a output",
+	"ext":"txt"
+}]
