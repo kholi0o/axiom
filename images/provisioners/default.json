@@ -96,8 +96,10 @@
 
         "echo 'Installing Tools'",
         
-        "echo 'Installing Apache Tomcat Scanner'", 
+        "echo 'Installing Apache Tomcat Scanner'",
+        "git clone https://github.com/p0dalirius/ApacheTomcatScanner.git /home/op/recon/",
         "/bin/su -l op -c 'sudo python3 -m pip install apachetomcatscanner'",
+        "sudo cp /home/op/recon/ApacheTomcatScanner/ApacheTomcatScanner.py /usr/bin/apachetomcatscanner; sudo chmod +x /usr/bin/apachetomcatscanner;",
           
         "echo 'Installing anew'",
         "/bin/su -l op -c '/usr/local/go/bin/go install github.com/tomnomnom/anew@latest'",
@@ -312,7 +314,7 @@
         
         "echo 'Installing sstimap'",
         "git clone https://github.com/vladko312/SSTImap.git /home/op/recon/", 
-        "cd /home/op/recon/SSTImap; pip3 install -r requirements.txt > /dev/null 2>&1; cd ~",
+        "pip3 install -r /home/op/recon/SSTImap/requirements.txt",
         
         "echo 'Installing subjack'",
         "/bin/su -l op -c '/usr/local/go/bin/go install github.com/haccer/subjack@latest'",
