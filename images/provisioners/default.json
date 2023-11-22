@@ -166,8 +166,17 @@
 
         "echo 'Installing exclude-cdn'",
         "/bin/su -l op -c 'GO111MODULE=on /usr/local/go/bin/go install github.com/Cgboal/exclude-cdn@latest'",
+        
+        "echo 'Installing fav-up'",
+        
+        "git clone https://github.com/pielco11/fav-up.git /home/op/recon/fav-up",
 
+        "pip3 install -r /home/op/recon/fav-up/requirements.txt",
+        
+        "cp /home/op/recon/fav-up/favUp.py /usr/bin/favUp && chmod +x /usr/bin/favUp",
+        
         "echo 'Installing feroxbuster'",
+        
         "/bin/su -l root -c 'curl -sL https://raw.githubusercontent.com/epi052/feroxbuster/master/install-nix.sh | bash && mv feroxbuster /usr/bin/'",
 
         "echo 'Installing fff'",
@@ -256,12 +265,12 @@
         "/bin/su -l op -c 'docker image build - < /home/op/lists/axiom-dockerfiles/linkfinder/Dockerfile -t axiom/linkfinder'",
 
         "echo 'Installing Log4j-scan'",
-        "git clone https://github.com/fullhunt/log4j-scan.git /home/op/recon/",
+        "git clone https://github.com/fullhunt/log4j-scan.git /home/op/recon/log4j-scan",
         "pip3 install -r /home/op/recon/log4j-scan/requirements.txt",
         "cp /home/op/recon/log4j-scan/log4j-scan.py /usr/bin/log4j-scan && chmod +x /usr/bin/log4j-scan",
 
         "echo 'Installing Logsensor'",
-        "git clone https://github.com/Mr-Robert0/Logsensor.git /home/op/recon/",
+        "git clone https://github.com/Mr-Robert0/Logsensor.git /home/op/recon/Logsensor",
         "pip3 install -r /home/op/recon/Logsensor/requirements.txt",
         
         "echo 'Installing masscan'",
@@ -322,7 +331,7 @@
         "git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git /home/op/recon/sqlmap-dev",
         
         "echo 'Installing sstimap'",
-        "git clone https://github.com/vladko312/SSTImap.git /home/op/recon/", 
+        "git clone https://github.com/vladko312/SSTImap.git /home/op/recon/SSTImap", 
         "pip3 install -r /home/op/recon/SSTImap/requirements.txt",
         
         "echo 'Installing subjack'",
