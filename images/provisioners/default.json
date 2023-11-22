@@ -255,6 +255,16 @@
         "echo 'Installing LinkFinder'",
         "/bin/su -l op -c 'docker image build - < /home/op/lists/axiom-dockerfiles/linkfinder/Dockerfile -t axiom/linkfinder'",
 
+        "echo 'Installing Log4j-scan'",
+        "git clone https://github.com/fullhunt/log4j-scan.git /home/op/recon/",
+        "pip3 install -r /home/op/recon/log4j-scan/requirements.txt",
+        "cp /home/op/recon/log4j-scan/log4j-scan.py /usr/bin/log4j-scan && chmod +x /usr/bin/log4j-scan",
+
+        "echo 'Installing Logsensor'",
+        "git clone https://github.com/Mr-Robert0/Logsensor.git /home/op/recon/",
+        "pip3 install -r /home/op/recon/Logsensor/requirements.txt && sudo /home/op/recon/Logsensor/install.sh",
+        "cp /home/op/recon/Logsensor/logsensor.py /usr/bin/logsensor && chmod +x /usr/bin/logsensor",
+        
         "echo 'Installing masscan'",
         "apt install masscan -y -qq",
 
