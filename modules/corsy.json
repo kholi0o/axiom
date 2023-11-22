@@ -1,4 +1,4 @@
 [{
-	"command":"python3 /home/op/recon/Corsy/corsy.py -i input | tee output",
+	"command":"python3 /home/op/recon/Corsy/corsy.py -i input -t 50 -q | tee output",
 	"ext":"txt"
 }]
