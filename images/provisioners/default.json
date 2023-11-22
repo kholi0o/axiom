@@ -262,7 +262,7 @@
 
         "echo 'Installing Logsensor'",
         "git clone https://github.com/Mr-Robert0/Logsensor.git /home/op/recon/",
-        "pip3 install -r /home/op/recon/Logsensor/requirements.txt && sudo /home/op/recon/Logsensor/install.sh",
+        "pip3 install -r /home/op/recon/Logsensor/requirements.txt",
         "cp /home/op/recon/Logsensor/logsensor.py /usr/bin/logsensor && chmod +x /usr/bin/logsensor",
         
         "echo 'Installing masscan'",
