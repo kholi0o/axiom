@@ -1,0 +1,4 @@
+[{
+	"command":"python3 /home/op/recon/Logsensor/logsensor.py -u input -s | tee -a output",
+	"ext":"txt"
+}]
