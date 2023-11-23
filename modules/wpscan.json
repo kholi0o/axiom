@@ -1,5 +1,5 @@
 [{
-	"command":"/usr/local/bin/wpscan --update --url _target_ --rua --clear-cache -f cli --disable-tls-checks --detection-mode aggressive --api-token myLODIJ4VZhJVsrKvg25v2PmxrbPLMLac78KHkWOLSw -e vp,vt,cb,dbe -o _output_/_cleantarget_ ",
+	"command":"/usr/local/bin/wpscan --update --url _target_ --rua --clear-cache -f cli --disable-tls-checks --detection-mode aggressive -e vp,vt,cb,dbe -o _output_/_cleantarget_ ",
 	"ext":"dir",
 	"threads":"50"
 }]
