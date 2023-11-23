@@ -1,5 +1,4 @@
 [{
   "command":"log4j-scan -l input --run-all-tests --test-CVE-2021-45046 --test-CVE-2022-42889 --waf-bypass | tee -a output",
-  "ext":"txt",
-  "threads":"50"
+  "ext":"txt"
 }]
