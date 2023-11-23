@@ -1,4 +1,4 @@
 [{
-  "command":"brutespray --file input -t 50 --service ftp,ssh,telnet,mysql,mssql,postgresql,vnc,rlogin,rexec --hosts 10 -o output",
+  "command":"brutespray --file input -t 50 --service ftp,ssh,telnet,mysql,mssql,postgresql,vnc,rlogin,rexec -c --hosts 10 -o output",
   "ext":"dir"
 }]
