@@ -133,6 +133,12 @@
         "echo 'Installing chaos-client'",
         "/bin/su -l op -c 'GO111MODULE=on /usr/local/go/bin/go install github.com/projectdiscovery/chaos-client/cmd/chaos@latest'",
 
+        "echo 'Installing changeme'",
+        
+        "wget https://github.com/ztgrace/changeme/archive/refs/tags/v1.2.3.tar.gz; tar -xvf v1.2.3.tar.gz -C /usr/bin/",
+        
+        "mv /usr/bin/changeme-1.2.3/changeme.py /usr/bin/changeme-1.2.3/changeme && chmod +x /usr/bin/changeme-1.2.3/*",
+        
         "echo 'Installing commix'",
         "/bin/su -l op -c 'docker image build - < /home/op/lists/axiom-dockerfiles/commix/Dockerfile -t axiom/commix'",
 
@@ -275,7 +281,7 @@
         "echo 'Installing Log4j-scan'",
         "git clone https://github.com/fullhunt/log4j-scan.git /home/op/recon/log4j-scan",
         "pip3 install -r /home/op/recon/log4j-scan/requirements.txt",
-        "cp /home/op/recon/log4j-scan/log4j-scan.py /usr/bin/log4j-scan && chmod +x /usr/bin/log4j-scan",
+        "cp /home/op/recon/log4j-scan/log4j-scan.py /usr/bin/log4j-scan && chmod +x /usr/bin/log4j-scan && pip install aiohttp-socks==0.7.0 && pip install pycryptodome",
 
         "echo 'Installing Logsensor'",
         "git clone https://github.com/Mr-Robert0/Logsensor.git /home/op/recon/Logsensor",
