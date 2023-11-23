@@ -1,0 +1,4 @@
+[{
+  "command":"changeme --timeout 5 --threads 50 --output output input",
+  "ext":"txt"
+}]
