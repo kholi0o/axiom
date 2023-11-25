@@ -1,0 +1,7 @@
+[
+	{
+		"command":"nikto --host _target_ -o _output_",
+		"ext":"html",
+    "threads":100
+	}
+]
