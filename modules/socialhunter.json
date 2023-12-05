@@ -1,4 +1,4 @@
  [{
-	"command":"socialhunter -f input -w 10 | tee -a output;",
+	"command":"/home/op/go/bin/socialhunter -f input -w 10 | tee -a output;",
 	"ext":"txt"
 }]
