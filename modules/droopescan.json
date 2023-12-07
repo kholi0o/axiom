@@ -1,1 +1,6 @@
-
+[{
+	"command":"droopescan scan drupal -u _target_ -e a -n all | tee -a _output_",
+	"ext":"txt",
+	"threads":"50"
+}]
+     	
