@@ -1,5 +1,5 @@
 [{
-  "command":"/home/op/recon/sqlmap-dev/sqlmap.py -m input -b --batch --random-agent --level=5 --tamper=apostrophemask,apostrophenullencode,base64encode,between,chardoubleencode,charencode,equaltolike,greatest,ifnull2ifisnull,multiplespaces,percentage,randomcase,securesphere,space2comment,space2plus,space2randomblank,unionalltounion,unmagicquotes --dbs --results-file output",
+  "command":"/home/op/recon/sqlmap-dev/sqlmap.py -m input -b --batch --random-agent --level=5 --tamper=apostrophemask,apostrophenullencode,base64encode,between,chardoubleencode,charencode,equaltolike,greatest,ifnull2ifisnull,multiplespaces,percentage,randomcase,securesphere,space2comment,space2plus,space2randomblank,unionalltounion,unmagicquotes --dbs --results-file=output",
   "ext":"csv",
   "threads":"50"
 }]
