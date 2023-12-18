@@ -1,1 +1,5 @@
-
+[{
+	"command": "python3 /home/op/recon/Jira-Lens/Jira-Lens/Jira-Lens.py -u _target_ -o _output_",
+	"ext": "dir",
+  "threads":"50"
+}]
