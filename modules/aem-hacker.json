@@ -1,1 +1,5 @@
-
+[{
+	"command": "python3 ~/Kholi0o_Hacking_Kit/tools/aem-hacker/aem_hacker.py -u _target_ | tee -a aem_results.txt",
+	"ext": "txt",
+  "threads":"50"
+}]
