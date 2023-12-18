@@ -1,7 +1,7 @@
 [{
 	"command": "cat input | while IFS= read -r $org 
   do 
-  shodan search --fields ip_str,port,hostnames kibana 217 org:$org | tee -a unprotected_kibana_instances_results.txt
+  shodan search --fields "ip_str,port,hostnames" kibana 217 org:$org | tee -a unprotected_kibana_instances_results.txt
   done",
 	"ext": "txt"
 }]
