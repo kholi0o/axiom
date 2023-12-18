@@ -268,12 +268,16 @@
         "echo 'Installing jexboss'",
         "git clone https://github.com/joaomatosf/jexboss.git /home/op/recon/jexboss",
         "pip install -r /home/op/recon/jexboss/requires.txt", 
+
+         "echo 'Installing Jira-Lens'",
+        "git clone https://github.com/MayankPandey01/Jira-Lens.git /home/op/recon/Jira-Lens",
+        "cd /home/op/recon/Jira-Lens/ && python3 setup.py install && pip3 install -r requirements.txt && cd ~", 
         
         "echo 'Installing katana'",
         "/bin/su -l op -c '/usr/local/go/bin/go install github.com/projectdiscovery/katana/cmd/katana@latest'",
 
         "echo 'Installing kiterunner'",
-        "/bin/su -l root -c 'wget -q https://github.com/assetnote/kiterunner/releases/download/v1.0.2/kiterunner_1.0.2_linux_amd64.tar.gz ; tar -zxvf kiterunner_1.0.2_linux_amd64.tar.gz ; rm kiterunner_1.0.2_linux_amd64.tar.gz ; mv kr /usr/bin/'",
+        "/bin/su -l root -c 'wget -q https://github.com/assetnote/kiterunner/releases/download/v1.0.2/kiterunner_1.0.2_linux_amd64.tar.gz ; tar -zxvf kiterunner_1.0.2_linux_amd64.tar.gz ; rm kiterunner_1.0.2_linux_amd64.tar.gz ; cp kr /usr/bin/'",
 
         "echo 'Installing kxss'",
         "/bin/su -l op -c '/usr/local/go/bin/go install github.com/tomnomnom/hacks/kxss@latest'",
