@@ -20,6 +20,7 @@
   shodan search --fields ip_str,port,hostnames http.html:'* The wp-config.php creation script uses this file' org:$org | tee -a exposed_wp-config.php_files.txt
   shodan search --fields ip_str,port,hostnames 'default password' org:$org | tee -a default_credentials.txt
   shodan search --fields ip_str,port,hostnames http.title:'phpmyadmin' org:$org | tee -a phpmyadmin_panels.txt 
-  shodan search --fields ip_str,port,hostnames vuln:CVE-2021-43798 org:$org | tee -a cve-2021-43798.txt; done",
+  shodan search --fields ip_str,port,hostnames vuln:CVE-2021-43798 org:$org | tee -a cve-2021-43798.txt 
+  done",
 	"ext": "txt"
 }]
