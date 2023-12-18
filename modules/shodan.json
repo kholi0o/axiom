@@ -2,25 +2,6 @@
 	"command": "cat input | while IFS= read -r $org 
   do 
   shodan search --fields ip_str,port,hostnames kibana 217 org:$org | tee -a unprotected_kibana_instances_results.txt
-  shodan search --fields ip_str,port,hostnames 'Authentication: disabled' port:445 org:$org | tee -a unprotected_smb_results.txt
-  shodan search --fields ip_str,port,hostnames port:445 os:Windows org: | tee -a windows_smb_exposures.txt
-  shodan search --fields ip_str,port,hostnames vsftpd 2.3.4 org:$org | tee -a vsftpd_backdoor_results.txt
-  shodan search --fields ip_str,port,hostnames 220 230 Login successful. port:21 org:$org | tee -a ftp_anonymous_login_results.txt
-  shodan search --fields ip_str,port,hostnames 'root@ -login -password -name -Session port:23 org:$org' | tee -a telnet_root_logged-in_results.txt
-  shodan search --fields ip_str,port,hostnames port:23 gateway console org:$org | tee -a unprotected_telnet_results.txt 
-  shodan search --fields ip_str,port,hostnames authentication disabled port:5900,5901 org:$org | tee -a unprotected_vnc_results.txt
-  shodan search --fields ip_str,port,hostnames authentication disabled RFB 003.008 org:$org | tee -a unprotected_vnc_results.txt 
-  shodan search --fields ip_str,port,hostnames 'MongoDB Server Information port:27017 -authentication org:$org' | tee -a unprotected_mongodb_results.txt
-  shodan search --fields ip_str,port,hostnames 'Set-Cookie: mongo-express= 200 org:$org' | tee -a open_mongodb_results.txt
-  shodan search --fields ip_str,port,hostnames MongoDB Server Information { metrics: org:$org | tee -a open_mongodb_results.txt
-  shodan search --fields ip_str,port,hostnames X-Jenkins 200 org:$org | tee -a unrestricted_Jenkins_instances.txt
-  shodan search --fields ip_str,port,hostnames http.title:'Index of /' org:$org | tee -a enabled_directory_listing.txt
-  shodan search --fields ip_str,port,hostnames product:'Redis key-value store' org:$org | tee -a Redis_open_instances.txt 
-  shodan search --fields ip_str,port,hostnames 'Docker-Distribution-Api-Version: registry 200 -gitlab org:$org' | tee -a docker_private_registries.txt 
-  shodan search --fields ip_str,port,hostnames http.html:'* The wp-config.php creation script uses this file' org:$org | tee -a exposed_wp-config.php_files.txt
-  shodan search --fields ip_str,port,hostnames 'default password' org:$org | tee -a default_credentials.txt
-  shodan search --fields ip_str,port,hostnames http.title:'phpmyadmin' org:$org | tee -a phpmyadmin_panels.txt 
-  shodan search --fields ip_str,port,hostnames vuln:CVE-2021-43798 org:$org | tee -a cve-2021-43798.txt 
   done",
 	"ext": "txt"
 }]
