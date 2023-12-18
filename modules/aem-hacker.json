@@ -1,5 +1,5 @@
 [{
-	"command": "python3 ~/Kholi0o_Hacking_Kit/tools/aem-hacker/aem_hacker.py -u _target_ | tee -a _output_",
+	"command": "python3 /home/op/recon/aem-hacker/aem_hacker.py -u _target_ | tee -a _output_",
 	"ext": "txt",
   "threads":"50"
 }]
