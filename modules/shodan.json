@@ -27,7 +27,7 @@
   # Apache Directory Listings
   shodan search --fields ip_str,port,hostnames http.title:'Index of /' org:$org | tee -a enabled_directory_listing.txt
   # Redis open instances
-  shodan search --fields ip_str,port,hostnames product:"Redis key-value store" org:$org | tee -a Redis_open_instances.txt
+  shodan search --fields ip_str,port,hostnames product:'Redis key-value store' org:$org | tee -a Redis_open_instances.txt
   # Docker Private Registries
   shodan search --fields ip_str,port,hostnames 'Docker-Distribution-Api-Version: registry 200 -gitlab org:$org' | tee -a docker_private_registries.txt
   # Misconfigured WordPress
