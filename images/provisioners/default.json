@@ -341,7 +341,10 @@
 
         "echo 'Installing scrying'",
         "wget -q -O /tmp/scrying.deb https://github.com/nccgroup/scrying/releases/download/v0.9.0-alpha.2/scrying_0.9.0-alpha.2_amd64.deb && apt install /tmp/scrying.deb -y -qq && apt install xvfb -y -qq",
-
+        
+        "echo 'Installing shodan'",
+        "easy_install shodan",
+        
         "echo 'Installing shuffledns'",
         "/bin/su -l op -c 'GO111MODULE=on /usr/local/go/bin/go install github.com/projectdiscovery/shuffledns/cmd/shuffledns@latest'",
 
