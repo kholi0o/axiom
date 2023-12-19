@@ -175,6 +175,10 @@
         "echo 'Installing dnsx'",
         "/bin/su -l op -c 'GO111MODULE=on /usr/local/go/bin/go install github.com/projectdiscovery/dnsx/cmd/dnsx@latest'",
 
+        echo "Installing Dorkscout...",
+        "wget https://github.com/R4yGM/dorkscout/releases/download/1.0/dorkscout_linux_amd64.tar",
+        "tar -xvf dorkscout_linux_amd64.tar && sudo mv dorkscout_linux_amd64/dorkscout /usr/bin && rm -r dorkscout_linux_amd64 dorkscout_linux_amd64.tar",
+        
         "echo 'Installing dotdotpwn'",
         "apt install dotdotpwn -y",
         
@@ -378,6 +382,7 @@
         
         "echo 'Installing trufflehog'",
         "/bin/su -l op -c 'docker image build - < /home/op/lists/axiom-dockerfiles/trufflehog/Dockerfile -t axiom/trufflehog'",
+        "wget https://github.com/trufflesecurity/trufflehog/releases/download/v3.63.5/trufflehog_3.63.5_linux_amd64.tar.gz && tar -xvf trufflehog_3.63.5_linux_amd64.tar.gz && sudo mv trufflehog /usr/local/bin/trufflehog && rm -r trufflehog_3.63.5_linux_amd64.tar.gz README.md LICENSE",
         
         "echo 'Installing unimap'",
         "wget -q -O /tmp/unimap https://github.com/Edu4rdSHL/unimap/releases/download/0.5.1/unimap-linux && mv /tmp/unimap /usr/bin/unimap && chmod +x /usr/bin/unimap",
