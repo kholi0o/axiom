@@ -137,7 +137,6 @@
         "/bin/su -l op -c 'GO111MODULE=on /usr/local/go/bin/go install github.com/projectdiscovery/chaos-client/cmd/chaos@latest'",
 
         "echo 'Installing changeme'",
-        
         "wget https://github.com/ztgrace/changeme/archive/refs/tags/v1.2.3.tar.gz; tar -xvf v1.2.3.tar.gz -C /usr/bin/",
         
         "mv /usr/bin/changeme-1.2.3/changeme.py /usr/bin/changeme-1.2.3/changeme && chmod +x /usr/bin/changeme-1.2.3/*",
@@ -189,15 +188,10 @@
         "/bin/su -l op -c 'GO111MODULE=on /usr/local/go/bin/go install github.com/Cgboal/exclude-cdn@latest'",
         
         "echo 'Installing fav-up'",
-        
         "git clone https://github.com/pielco11/fav-up.git /home/op/recon/fav-up",
-
-        "pip3 install -r /home/op/recon/fav-up/requirements.txt",
-        
-        "cp /home/op/recon/fav-up/favUp.py /usr/bin/favUp && chmod +x /usr/bin/favUp",
+        "pip3 install -r /home/op/recon/fav-up/requirements.txt && cp /home/op/recon/fav-up/favUp.py /usr/bin/favUp && chmod +x /usr/bin/favUp",
         
         "echo 'Installing feroxbuster'",
-        
         "/bin/su -l root -c 'curl -sL https://raw.githubusercontent.com/epi052/feroxbuster/master/install-nix.sh | bash && mv feroxbuster /usr/bin/'",
 
         "echo 'Installing fff'",
@@ -208,6 +202,9 @@
 
         "echo 'Installing findomain-linux'",
         "wget -q -O /tmp/findomain.zip https://github.com/Edu4rdSHL/findomain/releases/latest/download/findomain-linux.zip && unzip /tmp/findomain.zip -d /usr/bin/ && chmod +x /usr/bin/findomain && rm /tmp/findomain.zip",
+
+        "echo 'Installing frequest'",
+        "/bin/su -l op -c '/usr/local/go/bin/go install github.com/takshal/freq@latest'",
 
         "echo 'Installing gau'",
         "/bin/su -l op -c 'GO111MODULE=on /usr/local/go/bin/go install github.com/lc/gau/v2/cmd/gau@latest'",
