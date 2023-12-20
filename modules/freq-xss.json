@@ -1,0 +1,3 @@
+[{
+	"command":"for payload in $(cat /home/op/lists/xss_payloads.txt); do for url in $(cat input); do echo $url | qsreplace $payload | freq | grep -v 'Not' | tee -a xss_vulnerable_urls.txt; done; done"
+}]
