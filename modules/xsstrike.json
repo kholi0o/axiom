@@ -1,0 +1,4 @@
+[{
+    "command":"python3 /home/op/recon/XSStrike/xsstrike.py --seed input -t 50 --path --skip-dom --log-file output",
+    "ext":"txt",
+}] 
