@@ -1,0 +1,4 @@
+[{
+  "command":"for url in `cat input | grep -Ea '\\.pdf' | httpx -silent -mc 200`; do if curl -s \"$url\" | pdftotext -q - - | grep -Eaiq 'internal use only|confidential'; then echo $url | tee -a output; fi; done",
+	"ext":"txt"
+}]
