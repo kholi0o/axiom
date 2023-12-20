@@ -398,12 +398,14 @@
 
         "echo 'Installing xray'",
         "wget https://github.com/chaitin/xray/releases/download/1.9.11/xray_linux_amd64.zip",
-        "unzip xray_linux_amd64.zip > /dev/null 2>&1; rm xray_linux_amd64.zip",
+        "unzip xray_linux_amd64.zip; rm xray_linux_amd64.zip",
         "mv xray_linux_amd64 /usr/bin/xray; sudo chmod +x /usr/bin/xray",
         "xray; sudo mv xray.yaml /usr/bin/",
         "cp module.xray.yaml /usr/bin/; cp plugin.xray.yaml /usr/bin/",
         "mv module.xray.yaml ~; mv plugin.xray.yaml ~",
 
+        "echo 'Installing XSStrike'",
+        "git clone https://github.com/s0md3v/XSStrike.git /home/op/recon && cd XSStrike && pip3 install -r requirements.txt && cd ..",
         
         "echo 'Removing unneeded Docker images'",
         "/bin/su -l op -c 'docker image prune -f'",
