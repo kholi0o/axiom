@@ -1,4 +1,4 @@
 [{
-	"command":"favUp -wl input -k MKL7AAUqLv8D9ZOXqgOzEHAvGzyoNrx4 -o output",
+	"command":"favUp -wl input -o output",
 	"ext":"json"
 }]
