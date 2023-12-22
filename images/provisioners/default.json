@@ -192,7 +192,7 @@
         "/bin/su -l root -c 'curl -sL https://raw.githubusercontent.com/epi052/feroxbuster/master/install-nix.sh | bash && mv feroxbuster /usr/bin/'",
 
         "echo 'Installing festin'",
-        "sudo docker pull cr0hn/festin",
+        "/bin/su -l op -c 'docker pull cr0hn/festin'",
 
         "echo 'Installing fff'",
         "/bin/su -l op -c '/usr/local/go/bin/go install github.com/tomnomnom/fff@latest'",
