@@ -1,0 +1,4 @@
+[{
+	"command":"docker run --rm cr0hn/festin -f input -w -c 30 --tor -rr output.json -rd output.txt",
+	"ext":""
+}]
