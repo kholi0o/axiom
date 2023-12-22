@@ -125,12 +125,7 @@
         "/bin/su -l op -c 'git clone https://github.com/pry0cc/axiom.git /home/op/.axiom && cd /home/op/.axiom/interact && ./axiom-configure --shell zsh --unattended'",
 
         "echo 'Installing BruteSpray'",
-        
-        "git clone https://github.com/x90skysn3k/brutespray.git /home/op/recon/brutespray",
-      
-        "pip install -r /home/op/recon/brutespray/requirements.txt",
-
-        "cp /home/op/recon/brutespray/brutespray.py /usr/bin/brutespray && chmod +x /usr/bin/brutespray",
+        "git clone https://github.com/x90skysn3k/brutespray.git /home/op/recon/brutespray && pip install -r /home/op/recon/brutespray/requirements.txt && cp /home/op/recon/brutespray/brutespray.py /usr/bin/brutespray && chmod +x /usr/bin/brutespray",
         
         "echo 'Installing cero'",
         "/bin/su -l op -c 'docker image build - < /home/op/lists/axiom-dockerfiles/cero/Dockerfile -t axiom/cero'",
@@ -195,6 +190,9 @@
         
         "echo 'Installing feroxbuster'",
         "/bin/su -l root -c 'curl -sL https://raw.githubusercontent.com/epi052/feroxbuster/master/install-nix.sh | bash && mv feroxbuster /usr/bin/'",
+
+        "echo 'Installing festin'",
+        "sudo docker pull cr0hn/festin",
 
         "echo 'Installing fff'",
         "/bin/su -l op -c '/usr/local/go/bin/go install github.com/tomnomnom/fff@latest'",
