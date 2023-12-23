@@ -1,0 +1,4 @@
+[{
+	"command":"cloud_enum -kf input -t 10 -l output -f text",
+	"ext":"txt"
+}]
