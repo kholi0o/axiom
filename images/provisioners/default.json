@@ -82,6 +82,9 @@
         "echo 'Downloading cent'",
         "git clone https://github.com/xm1k3/cent.git /home/op/lists/cent",
 
+        "echo 'Downloading cloud_enum'",
+        "git clone https://github.com/initstring/cloud_enum.git /home/op/recon && pip3 install -r /home/op/recon/cloud_enum/requirements.txt && cp /home/op/recon/cloud_enum/cloud_enum.py /usr/bin/cloud_enum && chmod +x /usr/bin/cloud_enum",
+        
         "echo 'Downloading leaky-paths'",
         "git clone https://github.com/ayoubfathi/leaky-paths.git /home/op/lists/leaky-paths",
 
