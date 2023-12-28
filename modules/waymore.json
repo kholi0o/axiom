@@ -1,5 +1,0 @@
-[{
-	"command":"python3 /home/op/recon/waymore/waymore.py -mode B -i input -oU waymore_results.txt -oR archived_responses",
-	"ext":"",
-  "threads":"50"
-}]
