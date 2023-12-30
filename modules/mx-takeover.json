@@ -1,4 +1,4 @@
 [{
-	"command":"cat input | /home/op/go/bin/mx-takeover -check-whois -mailgun-api 3aab69d3f9550c8d73607b54adcec2d0-c30053db-c68df6d2 -output output",
+	"command":"cat input | /home/op/go/bin/mx-takeover -check-whois -output output",
 	"ext":"txt"
 }]
