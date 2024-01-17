@@ -1,6 +1,6 @@
 [
 	{
-		"command":"sudo nmap -v _target_ -n -Pn -sV -script=exploit -oX _output_/_cleantarget_.xml",
+		"command":"sudo nmap -v _target_ -n -Pn --open -sV -script=exploit -oX _output_/_cleantarget_.xml",
 		"ext":"xml",
     "threads":100
 	}
