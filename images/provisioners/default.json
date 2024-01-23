@@ -169,7 +169,7 @@
         "/bin/su -l op -c 'docker image build - < /home/op/lists/axiom-dockerfiles/dnsrecon/Dockerfile -t axiom/dnsrecon'",
 
         "echo 'Installing dnsvalidator'",
-        "git clone https://github.com/vortexau/dnsvalidator.git /home/op/recon/dnsvalidator && cd /home/op/recon/dnsvalidator/ && sudo python3 setup.py install",
+        "git clone https://github.com/vortexau/dnsvalidator.git /home/op/recon/dnsvalidator && cd /home/op/recon/dnsvalidator/ && sudo python3 setup.py install; cd $HOME",
 
         "echo 'Installing dnsx'",
         "/bin/su -l op -c 'GO111MODULE=on /usr/local/go/bin/go install github.com/projectdiscovery/dnsx/cmd/dnsx@latest'",
@@ -180,6 +180,10 @@
         
         "echo 'Installing dotdotpwn'",
         "apt install dotdotpwn -y",
+
+        "echo 'Installing EmailHarvester'",
+        "git clone https://github.com/maldevel/EmailHarvester /home/op/recon/EmailHarvester",
+        "cd /home/op/recon/EmailHarvester; pip install -r requirements.txt && docker build -t EmailHarvester .; cd $HOME",
         
         "echo 'Installing ERLPopper'",
         "git clone https://github.com/maikthulhu/ERLPopper.git /home/op/recon/ERLPopper",
@@ -213,7 +217,7 @@
         "/bin/su -l op -c 'GO111MODULE=on /usr/local/go/bin/go install github.com/lc/gau/v2/cmd/gau@latest'",
 
         "echo 'Installing gauplus'",
-        "/bin/su -l op -c 'GO111MODULE=on /usr/local/go/bin/go install -v github.com/bp0lr/gauplus@latest'",
+        "/bin/su -l op -c 'GO111MODULE=on /usr/local/go/bin/go install github.com/bp0lr/gauplus@latest'",
 
         "echo 'Installing gf'",
         "/bin/su -l op -c 'GO111MODULE=off /usr/local/go/bin/go install github.com/tomnomnom/gf@latest'",
@@ -334,6 +338,9 @@
         "echo 'Installing puredns'",
         "/bin/su -l op -c 'GO111MODULE=on /usr/local/go/bin/go install github.com/d3mondev/puredns/v2@latest'",
 
+        "git clone https://github.com/davidtavarez/pwndb /home/op/recon/pwndb",
+        "cd /home/op/recon/pwndb; virtualenv venv; source venv/bin/activate; pip3 install -r requirements.txt; cd $HOME",
+        
         "echo 'Installing qsreplace'",
         "/bin/su -l op -c '/usr/local/go/bin/go install github.com/tomnomnom/qsreplace@latest'",
 
