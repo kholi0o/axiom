@@ -137,9 +137,9 @@
         "/bin/su -l op -c 'GO111MODULE=on /usr/local/go/bin/go install github.com/projectdiscovery/chaos-client/cmd/chaos@latest'",
 
         "echo 'Installing changeme'",
-        "wget https://github.com/ztgrace/changeme/archive/refs/tags/v1.2.3.tar.gz; tar -xvf v1.2.3.tar.gz -C /usr/bin/",
+        "wget https://github.com/ztgrace/changeme/archive/refs/tags/v1.2.3.tar.gz; sudo tar -xvf v1.2.3.tar.gz -C /usr/bin/",
         
-        "mv /usr/bin/changeme-1.2.3/changeme.py /usr/bin/changeme-1.2.3/changeme && chmod +x /usr/bin/changeme-1.2.3/*",
+        "sudo cp /usr/bin/changeme-1.2.3/changeme.py /usr/bin/changeme-1.2.3/changeme && chmod +x /usr/bin/changeme-1.2.3/*",
         
         "echo 'Installing commix'",
         "/bin/su -l op -c 'docker image build - < /home/op/lists/axiom-dockerfiles/commix/Dockerfile -t axiom/commix'",
@@ -174,7 +174,7 @@
         "echo 'Installing dnsx'",
         "/bin/su -l op -c 'GO111MODULE=on /usr/local/go/bin/go install github.com/projectdiscovery/dnsx/cmd/dnsx@latest'",
 
-        echo "Installing Dorkscout...",
+        "echo 'Installing Dorkscout'",
         "wget https://github.com/R4yGM/dorkscout/releases/download/1.0/dorkscout_linux_amd64.tar",
         "tar -xvf dorkscout_linux_amd64.tar && sudo mv dorkscout_linux_amd64/dorkscout /usr/bin && rm -r dorkscout_linux_amd64 dorkscout_linux_amd64.tar",
         
