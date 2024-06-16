@@ -1,6 +1,6 @@
 [{
 	"command":"/home/op/go/bin/ffuf -w _wordlist_:DIR -w _target_:SUBDOMAIN -u SUBDOMAIN/DIR/ -s -r -fs 0 -mc 200 -o _output_/_cleantarget_ ",
   "wordlist":"/home/op/lists/seclists/Discovery/Web-Content/big.txt",
-	"ext":"txt",
+	"ext":"json",
 	"threads":"50"
 }]
