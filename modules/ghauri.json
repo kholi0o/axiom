@@ -1,0 +1,5 @@
+[{
+  "command":"ghauri -u input --confirm --level 3 -b --dbs --batch | tee -a ghauri_results",
+  "ext":"txt",
+  "threads":"20"
+}]
