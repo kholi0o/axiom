@@ -1,4 +1,4 @@
 [{
-	"command":"dorkscout scan -d input --proxy socks4://127.0.0.1:9050 | grep -v "Started scanning\|=====================================\|88\|89\|Results for\|Finished scanning" | tee -a dorkscout_backups_results",
+	"command":"dorkscout scan -d input --proxy socks4://127.0.0.1:9050 | tee -a dorkscout_backups_results",
 	"ext":"txt"
 }]
