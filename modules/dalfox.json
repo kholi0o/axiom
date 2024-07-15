@@ -1,4 +1,4 @@
 [{
-	"command": "cat input | /home/op/go/bin/dalfox pipe --waf-evasion --skip-bav --skip-grepping --only-poc=v --remote-payloads portswigger,payloadbox -b https://khalil.bxss.in --mass -o output",
+	"command": "cat input | /home/op/go/bin/dalfox pipe --waf-evasion --skip-bav --skip-grepping --skip-mining-all --only-poc=v -o output",
 	"ext": "txt"
 }]
