@@ -1,0 +1,4 @@
+[{
+	"command":"mkdir -p TInjA_results; TInjA url -u input --ratelimit 10 --reportpath 'TInjA_results' | tee -a output",
+	"ext":"txt"
+}]
