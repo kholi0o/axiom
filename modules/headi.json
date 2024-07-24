@@ -1,0 +1,4 @@
+[{
+	"command":"headi -u input/ | tee -a output",
+	"ext":"txt"
+}]
