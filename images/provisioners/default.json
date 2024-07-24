@@ -79,8 +79,12 @@
         "echo 'Installing Toolset for AEM hacking...'", 
         "git clone https://github.com/0ang3el/aem-hacker.git /home/op/recon/",
         
-        "echo 'Downloading cent'",
+        "echo 'Downloading cent and AllForOne'",
         "git clone https://github.com/xm1k3/cent.git /home/op/lists/cent",
+        "/bin/su -l op -c '/usr/local/go/bin/go install github.com/xm1k3/cent@latest",
+        "cent init; cent -p /home/op/lists/cent-templates",
+        "git clone https://github.com/AggressiveUser/AllForOne.git /home/op/lists/AllForOne",
+        "git clone https://github.com/projectdiscovery/fuzzing-templates.git /home/op/lists/fuzzing-templates",
 
         "echo 'Downloading cloud_enum'",
         "git clone https://github.com/initstring/cloud_enum.git /home/op/recon && pip3 install -r /home/op/recon/cloud_enum/requirements.txt && cp /home/op/recon/cloud_enum/cloud_enum.py /usr/bin/cloud_enum && chmod +x /usr/bin/cloud_enum",
