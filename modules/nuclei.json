@@ -1,5 +1,5 @@
 [{
-  "command":"/home/op/go/bin/nuclei -update -silent ; cat input | /home/op/go/bin/nuclei -scan-all-ips -etags ssl -et token-spray,misconfiguration/http-missing-security-headers.yaml -t _wordlist_ -o output",
+  "command":"/home/op/go/bin/nuclei -update -silent ; cat input | /home/op/go/bin/nuclei -timeout 3 -retries 2 -fr -scan-all-ips -etags ssl -et token-spray,misconfiguration/http-missing-security-headers.yaml -t _wordlist_ -o output",
   "ext":"txt",
   "wordlist":"/home/op/nuclei-templates"
 }]
