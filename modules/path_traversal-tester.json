@@ -1,0 +1,5 @@
+[{
+	"command":"/home/op/go/bin/ffuf -r -w _wordlist_ -u _target_ -mr 'root: ' | grep 'URL' | sed 's/| URL | //' | anew -q ffuf_path-traversal_resutls.txt",
+  "wordlist":"",
+	"threads":"50"
+}]

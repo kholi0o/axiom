@@ -1,5 +1,0 @@
-[{
-	"command":"/home/op/go/bin/ffuf -w _wordlist_ -u FUZZ -c",
-  "wordlist":"",
-	"threads":"100"
-}]
