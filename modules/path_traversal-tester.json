@@ -1,5 +1,4 @@
 [{
-	"command":"/home/op/go/bin/ffuf -r -w _wordlist_ -u _target_ -mr 'root: ' | grep 'URL' | sed 's/| URL | //' | anew -q ffuf_path-traversal_resutls.txt",
-  "wordlist":"",
-	"threads":"50"
+	"command":"cat input | grep '=' | dedupe | httpx -silent -paths _wordlist_ -threads 50 -random-agent -x GET,POST -follow-redirects -mc 200 -mr 'root:[x*]:0:0:' | tee -a output",
+  "wordlist":""
 }]
