@@ -159,7 +159,10 @@
 
         "echo 'Installing dalfox'",
         "/bin/su -l op -c 'GO111MODULE=on /usr/local/go/bin/go install github.com/hahwul/dalfox/v2@latest'",
-
+        
+        "echo 'Installing dedupe'",
+        "apt install dedupe -y",
+        
         "echo 'Installing dirdar'",
         "/bin/su -l op -c '/usr/local/go/bin/go install github.com/m4dm0e/dirdar@latest'",
 
