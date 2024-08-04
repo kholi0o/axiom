@@ -1,4 +1,5 @@
 [{
-	"command":"cat input | grep '=' | dedupe | httpx -silent -paths _wordlist_ -threads 50 -random-agent -x GET,POST -follow-redirects -mc 200 -mr 'root:[x*]:0:0:' | tee -a output",
-  "wordlist":""
+	"command":"cat input | grep '=' | dedupe | /home/op/go/bin/httpx -silent -paths _wordlist_ -threads 50 -random-agent -x GET,POST -follow-redirects -mc 200 -mr 'root:[x*]:0:0:' | tee -a output",
+  "wordlist":"",
+  "ext":"txt"
 }]
