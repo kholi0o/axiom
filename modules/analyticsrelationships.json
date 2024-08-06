@@ -1,0 +1,4 @@
+ [{
+	"command":"cat input | while IFS= read -r domain; do analyticsrelationships -u $domain -ch | tee -a output; done",
+	"ext":"txt"
+}]
