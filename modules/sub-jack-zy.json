@@ -1,4 +1,4 @@
-{
+[{
 	"command": "subjack -w input -t 30 -ssl -c /root/go/pkg/mod/github.com/haccer/subjack@v0.0.0-20201112041112-49c51e57deab/fingerprints.json -v 3 | tee -a subjack_results.txt; subzy --targets input --concurrency 30 --hide_fails | grep -v 'Loaded\|HTTPS\|Concurrent\|SSL\|timeout\|Show' | tee -a subzy_results.txt;",
 	"ext": "txt"
 }]
