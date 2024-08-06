@@ -121,7 +121,11 @@
 
         "echo 'Installing Amass'",
         "wget -q -O /tmp/amass.zip https://github.com/OWASP/Amass/releases/download/v3.21.2/amass_linux_amd64.zip && cd /tmp/ && unzip /tmp/amass.zip && mv /tmp/amass_linux_amd64/amass /usr/bin/amass",
-
+        
+        "echo 'Installing AnalyticsRelationships'",
+        "git clone https://github.com/Josue87/AnalyticsRelationships.git",
+        "cd AnalyticsRelationships/; go build -ldflags '-s -w'; sudo cp analyticsrelationships /usr/bin/analyticsrelationships",
+        
         "echo 'Installing aquatone'",
         "wget -q -O /tmp/aquatone.zip https://github.com/michenriksen/aquatone/releases/download/v1.7.0/aquatone_linux_amd64_1.7.0.zip && cd /tmp/ && unzip /tmp/aquatone.zip && mv /tmp/aquatone /usr/bin/aquatone",
 
