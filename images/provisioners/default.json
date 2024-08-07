@@ -164,6 +164,9 @@
         "echo 'Installing dalfox'",
         "/bin/su -l op -c 'GO111MODULE=on /usr/local/go/bin/go install github.com/hahwul/dalfox/v2@latest'",
         
+        "echo 'Installing deadfinder'",
+        "gem install deadfinder",
+        
         "echo 'Installing dedupe'",
         "apt install dedupe -y",
         
@@ -194,7 +197,7 @@
 
         "echo 'Installing EmailHarvester'",
         "git clone https://github.com/maldevel/EmailHarvester /home/op/recon/EmailHarvester",
-        "cd /home/op/recon/EmailHarvester; pip install -r requirements.txt && docker build -t EmailHarvester .; cd $HOME",
+        "cd /home/op/recon/EmailHarvester; pip install -r requirements.txt && docker build -t EmailHarvester .; cd /home/op/recon/",
         
         "echo 'Installing ERLPopper'",
         "git clone https://github.com/maikthulhu/ERLPopper.git /home/op/recon/ERLPopper",
