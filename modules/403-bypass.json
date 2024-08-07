@@ -1,4 +1,4 @@
 [{
-	"command":"cat input | while IFS= read -r subdomain; do bash /home/op/recon/4-ZERO-3/403-bypass.sh -u $subdomain --exploit | grep 'PAYLOAD : curl' | tee -a output; done ",
+	"command":"cat input | while IFS= read -r url; do bash /home/op/recon/4-ZERO-3/403-bypass.sh -u $url --exploit | grep 'PAYLOAD : curl' | tee -a output; done ",
 	"ext":"txt"
 }]
