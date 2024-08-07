@@ -1,0 +1,4 @@
+[{
+	"command":"python3 /home/op/recon/autopoisoner/autopoisoner.py -f input -n 5 -b -o output",
+	"ext":"txt"
+}]
