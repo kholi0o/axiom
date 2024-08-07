@@ -1,0 +1,4 @@
+[{
+	"command":"cat input | grep sitemap.xml | xargs -I{} deadfinder sitemap {} --output=deadfinder_results.json; cat deadfinder_results.json | jq | tee -a output",
+	"ext":"txt"
+}]
