@@ -316,6 +316,10 @@
         "echo 'Installing kxss'",
         "/bin/su -l op -c '/usr/local/go/bin/go install github.com/tomnomnom/hacks/kxss@latest'",
 
+        "echo 'Installing Kyubi'",
+        "git clone https://github.com/shiblisec/Kyubi.git /home/op/recon/Kyubi",
+        "cd /home/op/recon/Kyubi && sudo python3 setup.py install && pip install . && cd ~", 
+        
         "echo 'Installing LinkFinder'",
         "/bin/su -l op -c 'docker image build - < /home/op/lists/axiom-dockerfiles/linkfinder/Dockerfile -t axiom/linkfinder'",
 
