@@ -1,0 +1,4 @@
+[{
+	"command":"cat input | while IFS= read -r url; do kyubi -v $url | grep 200 | tee -a output",
+	"ext":"txt"
+}]
