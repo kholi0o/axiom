@@ -1,5 +1,5 @@
 [{
-  "command":"ghauri -u input --confirm --level 3 -b --dbs --batch | tee -a ghauri_output",
+  "command":"ghauri -u input --confirm --level 3 -b --dbs --batch | tee -a output",
   "ext":"txt",
   "threads":"20"
 }]
