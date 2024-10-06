@@ -1,0 +1,4 @@
+[{
+	"command":"python3 /home/op/recon/BBTZ_mRx/test_idor.py input | tee -a output",
+	"ext":"txt"
+}]
