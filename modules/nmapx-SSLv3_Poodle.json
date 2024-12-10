@@ -1,0 +1,7 @@
+[
+	{
+		"command":"sudo nmap -v _target_ -n -p- -Pn -sV --version-light -script=ssl-poodle -f --data-length 200 -oX _output_/_cleantarget_.xml | grep -B 5 VULNERABLE | tee -a sslv3_poodle_vulnerable_servers",
+		"ext":"xml",
+    "threads":50
+	}
+]
