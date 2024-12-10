@@ -1,6 +1,6 @@
 [
 	{
-		"command":"sudo nmap -v _target_ -n -p- -Pn --open -sV -script=exploit -f --data-length 200 -D 192.168.1.101,192.168.1.102,192.168.1.103,192.168.1.23 192.168.1.1-oX _output_/_cleantarget_.xml",
+		"command":"sudo nmap -v _target_ -n -p- -Pn --open -sV -script=exploit -f --data-length 200 -oX _output_/_cleantarget_.xml",
 		"ext":"xml",
     "threads":50
 	}
