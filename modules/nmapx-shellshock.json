@@ -1,0 +1,7 @@
+[
+	{
+		"command":"sudo nmap -n -p- -Pn -sV --script=http-shellshock -f --data-length 200 _target_",
+		"ext":"xml",
+    "threads":50
+	}
+]
